@@ -16,82 +16,89 @@
 
 <body>
   <header class="header">
-    <nav class="navbar navbar-expand navbar-light bg-light">
-      <a class="navbar-brand" href="#">Portfolio</a>
+    <nav class="navbar navbar-expand navbar-light bg-light header__nav">
+      <a class="navbar-brand header__nav__link" href="#">Portfolio</a>
     </nav>
   </header>
-  <main>
-    <article>
-      <section class="section-description">
-        <div class="container">
-          <div class="row">
-            <div class="col-4">
+  <main class="main">
+    <article class="main__article article">
+      <section class="article__section-description section-description">
+        <div class="container section-description__container">
+          <div class="row container__row">
+            <div class="col-4 row__column-img">
             </div>
-            <div class="col-8 d-flex flex-column">
-              <h2>Victor Mitskevich</h2>
-              <ol class="list-group list-group-flush bg-white">
-                <li class="list-group-item"><i class="fas fa-envelope"></i><a href="">Email</a></li>
-                <li class="list-group-item"><i class="fab fa-linkedin"></i><a href="">Linkedin</a></li>
-                <li class="list-group-item"><i class="fab fa-github"></i><a href="">Github</a></li>
+            <div class="col-8 d-flex flex-column row__column-text">
+              <h2 class="row__column-text__header">Victor Mitskevich</h2>
+              <ol class="list-group list-group-flush bg-white row__column-text__list list">
+                <li class="list-group-item list__item">
+                  <i class="fas fa-envelope list__item__icon"></i>
+                  <a href="mailto:mv125.mx@yandex.ru" class="list__item__link" target="_blank">Email</a>
+                </li>
+                <li class="list-group-item list__item">
+                  <i class="fab fa-linkedin list__item__icon"></i>
+                  <a href="https://www.linkedin.com/in/victormitskevich/" class="list__item__link" target="_blank">Linkedin</a>
+                </li>
+                <li class="list-group-item list__item">
+                  <i class="fab fa-github list__item__icon"></i>
+                  <a href="https://github.com/MitskevichVS" class="list__item__link" target="_blank">Github</a>
+                </li>
               </ol>
             </div>
           </div>
         </div>
       </section>
       <section class="section-education">
-        <div class="navbar navbar-expand navbar-light bg-light">
-          <a class="navbar-brand" href="#">Education</a>
-          <button class="btn btn-outline-success" type="button" id="section-education__nav__button">Expand</button>
+        <div class="navbar navbar-expand navbar-light bg-light section-education__nav nav">
+          <a class="navbar-brand nav__link" href="#">Education</a>
+          <button class="btn btn-outline-success nav__button" type="button" id="section-education__nav__button">Expand</button>
         </div>
-        <ul class="list-group list-group-flush toggleList" id="section-education__list">
-          <li class="list-group-item">2010 - 2015, BSUIR, Bachelor degree, Radioelectonics systems </li>
-          <li class="list-group-item">2015 - 2017, BSUIR, Masters degree, Radio engineering, including systems and
+        <ul class="list-group list-group-flush toggleList section-education__list list" id="section-education__list">
+          <li class="list-group-item list__item">2010 - 2015, BSUIR, Bachelor degree, Radioelectonics systems.</li>
+          <li class="list-group-item list__item">2015 - 2017, BSUIR, Masters degree, Radio engineering, including systems and
             devices for radio navigation, location and television.</li>
-          <li class="list-group-item">2018 - 2019, RS School</li>
+          <li class="list-group-item list__item">2018 - 2019, RS School.</li>
         </ul>
       </section>
       <section class="section-portfolio">
-        <div class="navbar navbar-expand navbar-light bg-light">
-          <a class="navbar-brand" href="#">Projects</a>
+        <div class="navbar navbar-expand navbar-light bg-light section-portfolio__nav nav">
+          <a class="navbar-brand nav__link" href="#">Projects</a>
         </div>
-        <div class="glide">
+        <div class="glide nav__slider">
           <div data-glide-el="track" class="glide__track">
-            <ul class="glide__slides">
-              <li class="glide__slide">
-                <div class="container">
-                  <div class="row justify-content-md-center">
-                    <div class="col">
-                      <h3>theyalow</h3>
-                      <ul>
-                        <li>SVG icons</li>
-                        <li>2 resolutions</li>
+            <ul class="glide__slides nav__slider__list list">
+              <li class="glide__slide list__item item">
+                <div class="container item__container">
+                  <div class="row justify-content-md-center item__container__row">
+                    <div class="col row__column">
+                      <h3 class="col__header" id="project1__header">theyalow</h3>
+                      <ul class="col__list col__list-hidden">
+                        <li class="col__list__item">SVG icons</li>
+                        <li class="col__list__item">2 resolutions</li>
                       </ul>
-                      <button type="button" class="btn btn-outline-secondary">Click here or on image to see the
-                        project</button>
+                      <p class="col__text">Click on image to see the project &gt;</p>
                     </div>
-                    <div class="col">
-                      <a href="#" id="first-project__link">
-                        <div class="image-theyalow"></div>
+                    <div class="col row__column">
+                      <a href="#" id="first-project__link" class="row__column__link">
+                        <div class="image-theyalow row__column__image"></div>
                       </a>
                     </div>
                   </div>
                 </div>
               </li>
-              <li class="glide__slide">
-                <div class="container">
-                  <div class="row justify-content-md-center">
-                    <div class="col">
-                      <h3>repair-design-project</h3>
-                      <ul>
-                        <li>Responsive</li>
-                        <li>SCSS</li>
+              <li class="glide__slide list__item item">
+                <div class="container item__container">
+                  <div class="row justify-content-md-center item__container__row">
+                    <div class="col row__column">
+                      <h3 class="col__header" id="project2__header">repair-design</h3>
+                      <ul class="col__list col__list-hidden">
+                        <li class="col__list__item">Responsive</li>
+                        <li class="col__list__item">SCSS</li>
                       </ul>
-                      <button type="button" class="btn btn-outline-secondary">Click here or on image to see the
-                        project</button>
+                      <p class="col__text">Click on image to see the project &gt;</p>
                     </div>
-                    <div class="col">
-                      <a href="./projects/" id="second-project__link">
-                        <div class="image-repair"></div>
+                    <div class="col row__column">
+                      <a href="./projects/" id="second-project__link" class="row__column__link">
+                        <div class="image-repair row__column__image"></div>
                       </a>
                     </div>
                   </div>

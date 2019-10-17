@@ -45,6 +45,11 @@ window.onload = function () {
   // iframe buttons
   const hideiFrame = () => {
     event.target.parentElement.classList.add('container-hidden');
+    resizeButtonProject1.textContent = 'Desktop';
+    resizeButtonProject2.textContent = 'Desktop';
+
+    const iFrame = event.target.parentNode.childNodes[1];
+    iFrame.classList.remove('iFrame-desktop');
   };
 
   const showDesktop = () => {
@@ -65,4 +70,16 @@ window.onload = function () {
 
   resizeButtonProject1.addEventListener('click', showDesktop);
   resizeButtonProject2.addEventListener('click', showDesktop);
+
+  // description 
+  const showDescription = () => {
+    if (window.innerWidth > 375) {
+      return;
+    }
+    event.target.parentNode.childNodes[3].classList.toggle('col__list-hidden');
+  };
+
+  const slider = this.document.querySelector('.nav__slider__list');
+
+  slider.addEventListener('click', showDescription);
 }
