@@ -93,7 +93,9 @@ body {
   }
 
   .section-iframe {
-    .container-project1 {
+
+    .container-project1,
+    .container-project2 {
       position: absolute;
       top: 0;
       width: 100%;
@@ -107,9 +109,14 @@ body {
       iframe {
         height: 100%;
         width: 640px;
+        background-color: #fff;
       }
 
-      #container-project1__button-size, 
+      .iFrame-desktop {
+        width: 100%;
+      }
+
+      #container-project1__button-size,
       #container-project1__button-back {
         position: absolute;
       }
@@ -119,14 +126,17 @@ body {
         left: 90%;
       }
 
+      .hideButton {
+        display: none;
+      }
+
       #container-project1__button-back {
         top: 60%;
         left: 90%;
       }
-
     }
 
-    .container-project2 {
+    .container-hidden {
       display: none;
     }
   }
@@ -156,6 +166,7 @@ body {
     }
   }
 }
+
 /*
 @media screen and (max-width: 375px) {
 

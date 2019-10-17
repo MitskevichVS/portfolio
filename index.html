@@ -29,11 +29,11 @@
             </div>
             <div class="col-8 d-flex flex-column">
               <h2>Victor Mitskevich</h2>
-                <ol class="list-group list-group-flush bg-white">
-                  <li class="list-group-item"><i class="fas fa-envelope"></i><a href="">Email</a></li>
-                  <li class="list-group-item"><i class="fab fa-linkedin"></i><a href="">Linkedin</a></li>
-                  <li class="list-group-item"><i class="fab fa-github"></i><a href="">Github</a></li>
-                </ol>
+              <ol class="list-group list-group-flush bg-white">
+                <li class="list-group-item"><i class="fas fa-envelope"></i><a href="">Email</a></li>
+                <li class="list-group-item"><i class="fab fa-linkedin"></i><a href="">Linkedin</a></li>
+                <li class="list-group-item"><i class="fab fa-github"></i><a href="">Github</a></li>
+              </ol>
             </div>
           </div>
         </div>
@@ -59,42 +59,44 @@
             <ul class="glide__slides">
               <li class="glide__slide">
                 <div class="container">
-                    <div class="row justify-content-md-center">
-                      <div class="col">
-                        <h3>theyalow</h3>
-                        <ul>
-                          <li>SVG icons</li>
-                          <li>2 resolutions</li>
-                        </ul>
-                        <button type="button" class="btn btn-outline-secondary">Click here or on image to see the project</button>
-                      </div>
-                      <div class="col">
-                        <a href="./projects/theyalow/index.html">
-                          <div class="image-theyalow"></div>
-                        </a>
-                      </div>
+                  <div class="row justify-content-md-center">
+                    <div class="col">
+                      <h3>theyalow</h3>
+                      <ul>
+                        <li>SVG icons</li>
+                        <li>2 resolutions</li>
+                      </ul>
+                      <button type="button" class="btn btn-outline-secondary">Click here or on image to see the
+                        project</button>
                     </div>
+                    <div class="col">
+                      <a href="#" id="first-project__link">
+                        <div class="image-theyalow"></div>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="glide__slide">
-                  <div class="container">
-                      <div class="row justify-content-md-center">
-                        <div class="col">
-                          <h3>repair-design-project</h3>
-                          <ul>
-                            <li>Responsive</li>
-                            <li>SCSS</li>
-                          </ul>
-                          <button type="button" class="btn btn-outline-secondary">Click here or on image to see the project</button>
-                        </div>
-                        <div class="col">
-                          <a href="./projects/">
-                            <div class="image-repair"></div>
-                          </a>
-                        </div>
-                      </div>
+                <div class="container">
+                  <div class="row justify-content-md-center">
+                    <div class="col">
+                      <h3>repair-design-project</h3>
+                      <ul>
+                        <li>Responsive</li>
+                        <li>SCSS</li>
+                      </ul>
+                      <button type="button" class="btn btn-outline-secondary">Click here or on image to see the
+                        project</button>
+                    </div>
+                    <div class="col">
+                      <a href="./projects/" id="second-project__link">
+                        <div class="image-repair"></div>
+                      </a>
+                    </div>
                   </div>
-                </li>
+                </div>
+              </li>
             </ul>
           </div>
           <div class="glide__arrows" data-glide-el="controls">
@@ -104,21 +106,25 @@
         </div>
       </section>
       <section class="section-iframe">
-        <div class="section-iframe__container-prj1 container-project1">
-          <iframe src="./projects/theyalow/index.html" frameborder="0"></iframe>
+        <div class="section-iframe__container-prj1 container-project1 container-hidden">
+          <iframe src="./projects/theyalow/index.html" id="container-project1__iFrame"></iframe>
           <button class="btn btn-outline-success" type="button" id="container-project1__button-size"></button>
           <button class="btn btn-outline-success" type="button" id="container-project1__button-back">Back</button>
         </div>
-        <div class="section-iframe__container-prj2 container-project2">
-            <iframe src="./projects/theyalow/index.html" frameborder="0"></iframe>
-            <button class="btn btn-outline-success" type="button" id="container-project2__button-size"></button>
-            <button class="btn btn-outline-success" type="button" id="container-project2__button-back">Back</button>
+        <div class="section-iframe__container-prj2 container-project2 container-hidden">
+          <iframe src="./projects/theyalow/index.html" id="container-project2__iFrame"></iframe>
+          <button class="btn btn-outline-success" type="button" id="container-project2__button-size"></button>
+          <button class="btn btn-outline-success" type="button" id="container-project2__button-back">Back</button>
         </div>
       </section>
     </article>
   </main>
-  <footer></footer>
-  <script src="dist/javascript/listControl.js"></script>
+  <footer>
+    <div class="navbar navbar-expand navbar-light bg-light">
+      <a class="navbar-brand" href="#">&copy Mitskevich</a>
+    </div>
+  </footer>
+  <script src="dist/javascript/index.js"></script>
   <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
   <script>
     new Glide('.glide', {
