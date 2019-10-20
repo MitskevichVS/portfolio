@@ -113,16 +113,25 @@ body {
         background-color: #ffffff;
       }
 
+      .container-project2__iFrame {
+        height: 100%;
+        width: 375px;
+        background-color: #ffffff;
+      }
+
       .iFrame-desktop {
         width: 100%;
       }
 
       #container-project1__button-size,
-      #container-project1__button-back {
+      #container-project1__button-back,
+      #container-project2__button-size,
+      #container-project2__button-back {
         position: absolute;
       }
 
-      #container-project1__button-size {
+      #container-project1__button-size,
+      #container-project2__button-size {
         top: 50%;
         left: 90%;
       }
@@ -131,7 +140,8 @@ body {
         display: none;
       }
 
-      #container-project1__button-back {
+      #container-project1__button-back,
+      #container-project2__button-back {
         top: 60%;
         left: 90%;
       }

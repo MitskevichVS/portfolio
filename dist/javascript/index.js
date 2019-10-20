@@ -1,10 +1,6 @@
 window.onload = function () {
-
   const expandButton = document.querySelector('#section-education__nav__button');
   const educationList = document.querySelector('#section-education__list');
-
-  const firstProjectLink = document.querySelector('#first-project__link');
-  const secondProjectLink = document.querySelector('#second-project__link');
 
   const closeButtonProject1 = document.querySelector('#container-project1__button-back');  
   const closeButtonProject2 = document.querySelector('#container-project2__button-back');
@@ -40,7 +36,23 @@ window.onload = function () {
     }
   }
 
-  firstProjectLink.addEventListener('click', showFirstProject);
+  const showSecondProject = () => {
+    this.event.preventDefault();
+    this.console.log(event.target);
+    const wrapper = document.querySelector('.section-iframe__container-prj2');
+    wrapper.classList.toggle('container-hidden');
+
+    if (window.innerWidth < 375) {
+      resizeButtonProject1.classList.add('hideButton');
+      resizeButtonProject2.classList.add('hideButton');
+    } else {
+      resizeButtonProject1.classList.remove('hideButton');
+      resizeButtonProject2.classList.remove('hideButton');
+      resizeButtonProject1.textContent = "Desktop";
+      resizeButtonProject2.textContent = "Desktop";
+    }
+  }
+
 
   // iframe buttons
   const hideiFrame = () => {
@@ -82,4 +94,12 @@ window.onload = function () {
   const slider = this.document.querySelector('.nav__slider__list');
 
   slider.addEventListener('click', showDescription);
+
+  slider.addEventListener('click', () => {
+    if(event.target.id === 'project1'){
+      showFirstProject();
+    } else if(event.target.id === 'project2'){
+      showSecondProject();
+    }
+  })
 }
